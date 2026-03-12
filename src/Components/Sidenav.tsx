@@ -1,13 +1,55 @@
-import React from 'react'
-
+import resumo from '../assets/resumo.svg';
+import vendas from '../assets/vendas.svg';
+import webhooks from '../assets/webhooks.svg';
+import configuracoes from '../assets/configuracoes.svg';
+import contato from '../assets/contato.svg';
+import sair from '../assets/sair.svg';
+import FintechSVG from '../assets/FintechSVG';
 
 const Sidenav = () => {
   return (
-    <div>
-      sideNav
+    <nav className="sidenav box bg-3">
+      <FintechSVG title="Fintech Logo" />
+      <ul>
+        <li>
+          <span>
+            <img src={resumo} alt="" />
+          </span>
+          <a>Resumo</a>
+        </li>
+        <li>
+          <span>
+            <img src={vendas} alt="" />
+          </span>
+          <a>Vendas</a>
+        </li>
+        <li>
+          <span>
+            <img src={webhooks} alt="" />
+          </span>
+          <a>WebHooks</a>
+        </li>
+        <li>
+          <span>
+            <img src={configuracoes} alt="" />
+          </span>
+          <a>Configurações</a>
+        </li>
+        <li>
+          <span>
+            <img src={contato} alt="" />
+          </span>
+          <a>Contato</a>
+        </li>
+        <li>
+          <span>
+            <img src={sair} alt="" />
+          </span>
+          <a>Sair</a>
+        </li>
+      </ul>
+    </nav>
+  );
+};
 
-    </div>
-  )
-}
-
-export default Sidenav
+export default Sidenav;
