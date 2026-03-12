@@ -5,6 +5,7 @@ import configuracoes from '../assets/configuracoes.svg';
 import contato from '../assets/contato.svg';
 import sair from '../assets/sair.svg';
 import FintechSVG from '../assets/FintechSVG';
+import { NavLink } from 'react-router-dom';
 
 const Sidenav = () => {
   return (
@@ -15,13 +16,13 @@ const Sidenav = () => {
           <span>
             <img src={resumo} alt="" />
           </span>
-          <a>Resumo</a>
+          <NavLink to="/">Resumo</NavLink>
         </li>
         <li>
           <span>
             <img src={vendas} alt="" />
           </span>
-          <a>Vendas</a>
+          <NavLink to="/vendas">Vendas</NavLink>
         </li>
         <li>
           <span>
