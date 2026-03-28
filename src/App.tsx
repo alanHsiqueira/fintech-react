@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import Header from './Components/Header';
 import Sidenav from './Components/Sidenav';
 import { DataContextProvider } from './Context/DataContext';
@@ -9,7 +9,7 @@ import Venda from './Pages/Venda';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <DataContextProvider>
         <div className="container">
           <div>
@@ -25,7 +25,7 @@ function App() {
           </main>
         </div>
       </DataContextProvider>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
